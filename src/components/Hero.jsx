@@ -63,18 +63,18 @@ const Hero = () => {
                     >
                         {/* Name */}
                         <motion.h1
-                            className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-black mb-2 lg:mb-4 bg-gradient-to-r from-primary-400 via-primary-500 to-primary-600 bg-clip-text text-transparent leading-[1.1] sm:leading-tight"
+                            className="text-4xl sm:text-5xl md:text-7xl lg:text-7xl xl:text-8xl font-black mb-2 lg:mb-4 bg-gradient-to-r from-primary-400 via-primary-500 to-primary-600 bg-clip-text text-transparent leading-[1.1] sm:leading-tight"
                         >
                             KATHER MAIDEEN
                         </motion.h1>
 
                         {/* Subtitle */}
                         <motion.p
-                            className="text-base sm:text-lg md:text-2xl text-gray-300 font-semibold mb-3 sm:mb-4 lg:mb-6 px-4 sm:px-0 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-1 sm:gap-0"
+                            className="text-base sm:text-lg md:text-2xl text-gray-300 font-semibold mb-3 sm:mb-4 lg:mb-6 px-4 sm:px-0 flex flex-wrap items-center justify-center lg:justify-start gap-y-2"
                         >
-                            <span>ICREPS Certified Trainer</span>
-                            <span className="mx-2 hidden sm:inline">|</span>
-                            <span>Royals Multi Gym</span>
+                            <span className="whitespace-nowrap">ICREPS Certified Trainer</span>
+                            <span className="mx-3 hidden sm:inline text-gray-600">|</span>
+                            <span className="whitespace-nowrap">Royals Multi Gym</span>
                         </motion.p>
 
                         {/* About Text */}
@@ -86,7 +86,7 @@ const Hero = () => {
                         </motion.p>
 
                         {/* Typing Animation */}
-                        <div className="text-xl md:text-3xl font-bold text-primary-500 mb-8 lg:mb-10 h-8 lg:h-10 flex justify-center lg:justify-start">
+                        <div className="text-xl md:text-3xl font-bold text-primary-500 mb-8 lg:mb-10 min-h-[40px] lg:min-h-[48px] flex justify-center lg:justify-start">
                             <Typewriter
                                 words={[
                                     'Bodybuilder',
@@ -123,20 +123,20 @@ const Hero = () => {
                         </div>
 
                         {/* CTA Buttons */}
-                        <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center px-4 sm:px-0">
+                        <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-stretch sm:items-center px-4 sm:px-0">
                             <motion.button
                                 onClick={handleWhatsApp}
-                                className="flex items-center justify-center gap-3 bg-green-600 hover:bg-green-700 text-white font-bold px-12 py-4 lg:py-5 rounded-2xl shadow-2xl hover:shadow-green-500/40 transition-all duration-300 group w-full lg:w-auto"
+                                className="flex items-center justify-center gap-3 bg-green-600 hover:bg-green-700 text-white font-bold px-10 py-4 rounded-2xl shadow-2xl hover:shadow-green-500/40 transition-all duration-300 group w-full lg:w-auto whitespace-nowrap"
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
                             >
                                 <FaWhatsapp className="text-2xl group-hover:scale-110 transition-transform" />
-                                <span className="text-lg lg:text-xl">WhatsApp Me</span>
+                                <span className="text-lg">WhatsApp Me</span>
                             </motion.button>
 
                             <motion.button
                                 onClick={handleCall}
-                                className="flex items-center justify-center gap-3 bg-dark-800/80 hover:bg-dark-700 text-gray-200 border border-gray-700 hover:border-gray-500 font-bold px-8 py-4 rounded-2xl transition-all duration-300 group w-full lg:w-auto"
+                                className="flex items-center justify-center gap-3 bg-dark-800/80 hover:bg-dark-700 text-gray-200 border border-gray-700 hover:border-gray-500 font-bold px-10 py-4 rounded-2xl transition-all duration-300 group w-full lg:w-auto whitespace-nowrap"
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
                             >
