@@ -23,7 +23,7 @@ const Hero = () => {
             {/* Background Image with Overlay */}
             <div
                 className="absolute inset-0 bg-cover bg-center transition-transform duration-1000"
-                style={{ backgroundImage: "url('/hero-bg.svg')" }}
+            // style={{ backgroundImage: "url('/hero-bg.svg')" }}
             >
                 <div className="absolute inset-0 bg-gradient-to-r from-dark-950 via-dark-950/80 to-transparent"></div>
             </div>
@@ -56,7 +56,7 @@ const Hero = () => {
 
                     {/* Left side (Content) - Overlays at bottom on mobile */}
                     <motion.div
-                        className="text-center lg:text-left order-2 lg:order-1 relative lg:static mt-[-80px] sm:mt-[-100px] lg:mt-0 pb-12 lg:pb-0 z-30"
+                        className="text-center lg:text-left order-2 lg:order-1 relative lg:static mt-[-60px] sm:mt-[-100px] lg:mt-0 pb-12 lg:pb-0 z-30 px-6 sm:px-0"
                         initial={{ opacity: 0, y: 50 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
@@ -70,24 +70,19 @@ const Hero = () => {
 
                         {/* Subtitle */}
                         <motion.p
-                            className="text-base sm:text-lg md:text-2xl text-gray-300 font-semibold mb-3 sm:mb-4 lg:mb-6 px-4 sm:px-0"
+                            className="text-base sm:text-lg md:text-2xl text-gray-300 font-semibold mb-3 sm:mb-4 lg:mb-6 px-4 sm:px-0 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-1 sm:gap-0"
                         >
-                            ICREPS Certified Trainer | Royals Multi Gym
+                            <span>ICREPS Certified Trainer</span>
+                            <span className="mx-2 hidden sm:inline">|</span>
+                            <span>Royals Multi Gym</span>
                         </motion.p>
 
-                        {/* About Text - Shortened to 2 lines */}
+                        {/* About Text */}
                         <motion.p
-                            className="text-gray-400 text-base md:text-xl mb-6 lg:mb-8 leading-relaxed max-w-xl mx-auto lg:mx-0 hidden sm:block"
+                            className="text-gray-400 text-sm md:text-xl mb-6 lg:mb-8 leading-relaxed max-w-xl mx-auto lg:mx-0"
                         >
                             Professional fitness trainer specializing in elite physique transformations
-                            and competition coaching for serious athletes.
-                        </motion.p>
-
-                        {/* Mobile-only short description */}
-                        <motion.p
-                            className="text-gray-400 text-xs sm:hidden mb-6 leading-relaxed max-w-xs mx-auto px-6"
-                        >
-                            Professional fitness trainer & competition coach specializing in elite physique transformations.
+                            <span className="hidden sm:inline"> and competition coaching for serious athletes</span>.
                         </motion.p>
 
                         {/* Typing Animation */}

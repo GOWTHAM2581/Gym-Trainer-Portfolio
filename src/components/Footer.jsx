@@ -89,7 +89,7 @@ const Footer = () => {
                 </div>
 
                 {/* Bottom Bar */}
-                <div className="pt-8 border-t border-dark-800 text-center px-3">
+                <div className="pt-8 border-t border-dark-800 text-center">
                     <p className="text-gray-400 text-sm sm:text-base leading-relaxed">
                         © {currentYear} . Developed by <span className="text-primary-500 font-bold">Gowtham</span>. All rights reserved.
                     </p>

@@ -14,7 +14,7 @@ const ChiefGuest = () => {
             'chief_1.jpg',
             'chief_2.jpg',
             'chief_3.jpg',
-            'chief_4.jpg'
+            'chief_4.jpeg'
         ];
 
         const chiefGuestImages = filenames.map((name, i) => ({

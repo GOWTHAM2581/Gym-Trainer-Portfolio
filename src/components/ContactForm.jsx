@@ -60,13 +60,14 @@ const ContactForm = () => {
                     );
                     window.open(`https://wa.me/9787037367?text=${whatsappMessage}`, '_blank');
 
-                    // Reset form
+                    // Reset form and status
                     setFormData({
                         name: '',
                         phone: '',
                         goal: '',
                         message: ''
                     });
+                    setSubmitStatus(null);
                 }, 1500);
             }
         } catch (error) {
